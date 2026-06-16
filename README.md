@@ -5,7 +5,7 @@
 **Study:** The Substrate Is Not Neutral: Intersectional Psychoneuroendocrinology as a Framework for Neuroendocrine Regulation  
 **Author:** Stephanie H. Cook, NYU School of Global Public Health  
 **Data source:** All of Us Research Program, Controlled Tier CDR v8  
-**Submitted:** Dirk Hellhammer Award 2026, International Society of Psychoneuroendocrinology  
+**Submitted:** International Society of Psychoneuroendocrinology  
 **Last updated:** 2026-03-29 | Version: v2  
 
 ---
@@ -27,7 +27,7 @@ No participant-level data, no `.RData` workspace files, no individual-level outp
 Analyses require access to the All of Us Research Program Controlled Tier.  
 Apply at: https://www.researchallofus.org/register/  
 
-CDR version used: **CDR v8** (`wb-silky-artichoke-2408.C2024Q3R8`)  
+CDR version used: **CDR v8** (`INSERT YOUR BUCKET HERE`)  
 Analysis environment: **RStudio**, launched within the All of Us Researcher Workbench  
 
 **Why RStudio and not the Workbench Python+R environment?** `lme4` could not be installed in Workbench 2.0. The pre-compiled binary failed and source compilation requires `cmake`, which is not available in that environment. RStudio was launched from within the Workbench and connects to the same BigQuery CDR and workspace bucket. All data access, credentialing, and DUA compliance requirements are identical. If you encounter `lme4` installation errors in the Python+R environment, switch to RStudio.
