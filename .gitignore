@@ -1,9 +1,6 @@
 *.rds
-closest.rds
-geo.rds
-dep_raw_source*.csv
-exports/definitive/samp_*.rds
-exports/definitive/*bootstrap*.rds
 *.tmp
 .RData
 .Rhistory
+phase1_out/
+dep_raw_source*.csv
