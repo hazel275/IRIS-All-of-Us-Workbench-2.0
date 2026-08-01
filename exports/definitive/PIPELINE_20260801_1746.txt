@@ -1,0 +1,4 @@
+IRISE v9 DEFINITIVE PIPELINE  20260801_1746  cdr=wb-silky-artichoke-2408.C2025Q4R6
+SECTION 1 anchor people: 746938
+   cache provenance mismatch at ~/IRISE_v9/closest.rds -> rebuilding.
+SECTION 2 closest: 24729

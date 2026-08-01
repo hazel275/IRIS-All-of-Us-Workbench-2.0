@@ -1,0 +1,87 @@
+IRISE v9 DEFINITIVE PIPELINE  20260801_1739  cdr=wb-silky-artichoke-2408.C2025Q4R6
+SECTION 1 anchor people: 746938
+   cache OK (~/IRISE_v9/closest.rds, built 2026-08-01 17:28:10.365725)
+SECTION 2 closest: 24729
+   AUDIT closest_N                              obs=24729.0000 target=24729.0000 rel(tol=0.01) -> PASS
+   AUDIT closest_pct_gt10                       obs=23.8061 target=23.8000 abs(tol=0.5) -> PASS
+SECTION 3b gender mapping:
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender             gender3      n    [3m[38;5;246m<chr>[39m[23m                  [3m[38;5;246m<chr>[39m[23m    [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Woman Woman   [4m4[24m[4m6[24m[4m0[24m973
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender           gender3      n    [3m[38;5;246m<chr>[39m[23m                [3m[38;5;246m<chr>[39m[23m    [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Man Man     [4m2[24m[4m7[24m[4m0[24m719
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender                  gender3             n    [3m[38;5;246m<chr>[39m[23m                       [3m[38;5;246m<chr>[39m[23m           [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Non Binary Gender Minority  [4m5[24m814
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender gender3     n    [3m[38;5;246m<chr>[39m[23m      [3m[38;5;246m<chr>[39m[23m   [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m PMI: Skip  [31mNA[39m       [4m5[24m176
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender                   gender3             n    [3m[38;5;246m<chr>[39m[23m                        [3m[38;5;246m<chr>[39m[23m           [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Transgender Gender Minority  [4m1[24m974
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender                gender3     n    [3m[38;5;246m<chr>[39m[23m                     [3m[38;5;246m<chr>[39m[23m   [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m PMI: Prefer Not To Answer [31mNA[39m       [4m1[24m144
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender                          gender3             n    [3m[38;5;246m<chr>[39m[23m                               [3m[38;5;246m<chr>[39m[23m           [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Additional Options Gender Minority  [4m1[24m138
+SECTION 3d zip people=746980 site people=24729
+   cache OK (~/IRISE_v9/dep_by_zip3.rds, built 2026-08-01 17:28:19.851236)
+SECTION 4 race categories: Black, Hispanic, Other/Asian, White
+   race5c frequencies:
+   [38;5;246m# A tibble: 1 × 2[39m    race5c      n    [3m[38;5;246m<chr>[39m[23m   [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m White  [4m4[24m[4m0[24m[4m5[24m367
+   [38;5;246m# A tibble: 1 × 2[39m    race5c        n    [3m[38;5;246m<chr>[39m[23m     [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Hispanic [4m1[24m[4m3[24m[4m6[24m899
+   [38;5;246m# A tibble: 1 × 2[39m    race5c      n    [3m[38;5;246m<chr>[39m[23m   [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Black  [4m1[24m[4m2[24m[4m4[24m663
+   [38;5;246m# A tibble: 1 × 2[39m    race5c          n    [3m[38;5;246m<chr>[39m[23m       [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Other/Asian [4m8[24m[4m0[24m009
+SECTION 4 gender levels=3 positions=27
+SECTION 5 [PRIMARY 0-10] N=14601 positions=27 min_cell=27
+SECTION 5 [SENS 0-20] N=16142 positions=27 min_cell=30
+SECTION 5 [BROAD 0-200] N=18463 positions=27 min_cell=32
+   AUDIT primary_N                              obs=14601.0000 target=14609.0000 abs(tol=0) -> **FAIL**
+   AUDIT s20_N                                  obs=16142.0000 target=16162.0000 abs(tol=0) -> **FAIL**
+   AUDIT broad_N                                obs=18463.0000 target=18487.0000 abs(tol=0) -> **FAIL**
+
+== MAIHDA PRIMARY 0-10 N=14601 ==
+   M1 null VPC=3.082%  M4 adj VPC=0.303%  adj additive expl=83.6%  M4 singular=FALSE
+   DESCRIPTIVE gradient 2.5-fold  lo=White | Man | High hi=Black | Woman | Low
+
+== MAIHDA SENS 0-20 N=16142 ==
+   M1 null VPC=3.965%  M4 adj VPC=0.260%  adj additive expl=86.4%  M4 singular=FALSE
+   DESCRIPTIVE gradient 3.3-fold  lo=White | Man | High hi=Black | Woman | Low
+
+== MAIHDA BROAD 0-200 N=18463 ==
+   M1 null VPC=4.768%  M4 adj VPC=0.135%  adj additive expl=94.1%  M4 singular=FALSE
+   DESCRIPTIVE gradient 4.0-fold  lo=White | Man | High hi=Black | Woman | Low
+   AUDIT primary_null_VPC                       obs=3.0822 target=3.1400 abs(tol=0.1) -> PASS
+   AUDIT primary_adj_VPC                        obs=0.3030 target=0.4400 abs(tol=0.1) -> **FAIL**
+   AUDIT primary_add_expl                       obs=83.5798 target=78.2000 abs(tol=1) -> **FAIL**
+   AUDIT primary_gradient                       obs=2.5424 target=2.6000 abs(tol=0.2) -> PASS
+   AUDIT s20_null_VPC                           obs=3.9651 target=4.0800 abs(tol=0.1) -> **FAIL**
+   AUDIT s20_adj_VPC                            obs=0.2600 target=0.4400 abs(tol=0.1) -> **FAIL**
+   AUDIT s20_add_expl                           obs=86.3936 target=81.0000 abs(tol=1) -> **FAIL**
+   AUDIT s20_gradient                           obs=3.2787 target=3.4000 abs(tol=0.2) -> PASS
+   AUDIT broad_null_VPC                         obs=4.7680 target=4.9200 abs(tol=0.1) -> **FAIL**
+   AUDIT broad_adj_VPC                          obs=0.1351 target=0.1900 abs(tol=0.1) -> PASS
+   AUDIT broad_add_expl                         obs=94.0960 target=92.7000 abs(tol=1) -> **FAIL**
+   AUDIT broad_gradient                         obs=3.9965 target=4.2000 abs(tol=0.2) -> **FAIL**
+
+### SECTION 7 SAMPLE-LOSS LADDER
+   closest=24729  >10=5887 (23.8%)  <=10=18842  broad_cc=18463  primary_cc=14601
+
+== MAIHDA CAPPED at 10 N=18463 ==
+   M1 null VPC=4.558%  M4 adj VPC=0.140%  adj additive expl=92.9%  M4 singular=FALSE
+   DESCRIPTIVE gradient 4.0-fold  lo=White | Man | High hi=Black | Woman | Low
+   AUDIT capped_null_VPC                        obs=4.5584 target=4.6700 abs(tol=0.1) -> **FAIL**
+   AUDIT capped_add_expl                        obs=92.8859 target=90.3000 abs(tol=1.5) -> **FAIL**
+
+### SECTION 8 AXIS-COUNT (primary)
+   race  2.811451  8.783749
+   gender  2.404164  21.99798
+   income  2.017764  34.53456
+   race+gender  2.079792  32.52209
+   race+income  1.691258  45.1279
+   gender+income  1.060226  65.60143
+   all three  0.6652079  78.41763
+
+### SECTION 9 GEO N=11514 zips=88 sites=32
+   M5 zip VPC=3.382%  zip var=0.02662  position VPC=0.401%  singular=FALSE
+   +site(fixed): zip var 0.02662 -> 0.04928 (area variation REMAINS after site means)
+   extreme zip 782 BLUP=-0.817; refit w/o: zip var 0.02662 -> 0.01151 (-57%)
+   zip VAR CI [0.01731,0.03894] (profile)
+   AUDIT geo_N                                  obs=11514.0000 target=11505.0000 abs(tol=0) -> **FAIL**
+   AUDIT geo_n_zips                             obs=88.0000 target=92.0000 abs(tol=0) -> **FAIL**
+   AUDIT geo_n_sites                            obs=32.0000 target=35.0000 abs(tol=0) -> **FAIL**
+   AUDIT geo_zip_VPC                            obs=3.3819 target=3.2500 abs(tol=0.15) -> PASS
+   AUDIT geo_zip_var                            obs=0.0266 target=0.0258 abs(tol=0.002) -> PASS
+   AUDIT geo_position_var                       obs=0.0032 target=0.0020 abs(tol=0.001) -> **FAIL**
+   AUDIT geo_site_adj_zip_var                   obs=0.0493 target=0.0549 abs(tol=0.005) -> **FAIL**
+   AUDIT geo_infl_pct                           obs=-56.7836 target=-60.0000 abs(tol=5) -> PASS
+
+### SECTION 10 RESIDUAL ROBUSTNESS (live)

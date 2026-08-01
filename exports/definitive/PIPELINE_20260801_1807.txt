@@ -1,0 +1,19 @@
+IRISE v9 DEFINITIVE PIPELINE  20260801_1807  cdr=wb-silky-artichoke-2408.C2025Q4R6
+SECTION 1 anchor people: 746938
+   cache OK (~/IRISE_v9/closest.rds, built 2026-08-01 17:46:52.667053)
+SECTION 2 closest: 24729
+   WARNING: 24728 duplicate measurement_id values in closest.
+   (site already joined in-query; person_id is unique, so analysis is safe.)
+   AUDIT closest_N                              obs=24729.0000 target=24729.0000 rel(tol=0.01) -> PASS
+   AUDIT closest_pct_gt10                       obs=23.8061 target=23.8000 abs(tol=0.5) -> PASS
+SECTION 3b gender mapping:
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender             gender3      n    [3m[38;5;246m<chr>[39m[23m                  [3m[38;5;246m<chr>[39m[23m    [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Woman Woman   [4m4[24m[4m6[24m[4m0[24m973
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender           gender3      n    [3m[38;5;246m<chr>[39m[23m                [3m[38;5;246m<chr>[39m[23m    [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Man Man     [4m2[24m[4m7[24m[4m0[24m719
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender                  gender3             n    [3m[38;5;246m<chr>[39m[23m                       [3m[38;5;246m<chr>[39m[23m           [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Non Binary Gender Minority  [4m5[24m814
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender gender3     n    [3m[38;5;246m<chr>[39m[23m      [3m[38;5;246m<chr>[39m[23m   [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m PMI: Skip  [31mNA[39m       [4m5[24m176
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender                   gender3             n    [3m[38;5;246m<chr>[39m[23m                        [3m[38;5;246m<chr>[39m[23m           [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Transgender Gender Minority  [4m1[24m974
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender                gender3     n    [3m[38;5;246m<chr>[39m[23m                     [3m[38;5;246m<chr>[39m[23m   [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m PMI: Prefer Not To Answer [31mNA[39m       [4m1[24m144
+   [38;5;246m# A tibble: 1 × 3[39m    raw_gender                          gender3             n    [3m[38;5;246m<chr>[39m[23m                               [3m[38;5;246m<chr>[39m[23m           [3m[38;5;246m<int>[39m[23m  [38;5;250m1[39m Gender Identity: Additional Options Gender Minority  [4m1[24m138
+SECTION 3d zip people=746980 selected-measurement site nonmissing=24729
+   cache provenance mismatch at ~/IRISE_v9/dep_by_zip3.rds -> rebuilding.
+   DEP fetch failed: cannot open URL 'https://raw.githubusercontent.com/geomarker-io/dep_index/cached/2023/data/ACS_deprivation_index_by_zipcode.csv'

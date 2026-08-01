@@ -1,0 +1,2 @@
+"spec","N","n_zip3","n_sites","zip_VPC","zip_variance","position_variance","residual_variance","site_adjusted_zip_variance","influential_zip3","exclusion_change_percent","profile_zip_variance_lo","profile_zip_variance_hi","parametric_boot_zip_variance_lo","parametric_boot_zip_variance_hi"
+"geographic_M5",11514,88,32,3.38222486714379,0.0266287988381792,0.00316516460502787,0.757522075086975,0.0468530357570754,"782",-56.7544108676205,0.017315666177769,0.0389411400943614,0.0165125130368861,0.038061612922648
